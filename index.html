@@ -2,10 +2,143 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>My First Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>October Calendar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f57c00;
+            color: white;
+        }
+        td {
+            background-color: #f1f1f1;
+        }
+        td:hover {
+            background-color: #ffeb3b;
+            cursor: pointer;
+        }
+        h1 {
+            color: #f57c00;
+            font-size: 2.5em;
+            margin-top: 30px;
+        }
+        .calendar-image {
+            width: 50px; 
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 5px;
+        }
+        .day-link {
+            display: inline-block;
+            text-decoration: none;
+            color: inherit;
+        }
+        .day-link:hover {
+            text-decoration: none;
+            color: inherit;
+        }
+        @media (max-width: 768px) {
+            table {
+                width: 100%;
+            }
+            th, td {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .calendar-image {
+                width: 40px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
+
+    <h1>October 2025 Calendar</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>
+                    <a href="profile.html" class="day-link">
+                        <img class="calendar-image" src="c:\Users\Owner\Pictures\Saved Pictures\mypicture.jpg" alt="Image">
+                        18
+                    </a>
+                </td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
